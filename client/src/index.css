@@ -13,41 +13,41 @@
 }
 
 :root {
-  --background: 0 0% 98%;
-  --foreground: 20 14.3% 4.1%;
-  --muted: 60 4.8% 95.9%;
-  --muted-foreground: 25 5.3% 44.7%;
-  --popover: 0 0% 100%;
-  --popover-foreground: 20 14.3% 4.1%;
-  --card: 0 0% 100%;
-  --card-foreground: 20 14.3% 4.1%;
-  --border: 20 5.9% 90%;
-  --input: 20 5.9% 90%;
-  --primary: 132 65% 45%;
-  --primary-foreground: 211 100% 99%;
-  --secondary: 220 13% 20%;
-  --secondary-foreground: 60 9.1% 97.8%;
-  --accent: 210 100% 50%;
-  --accent-foreground: 210 40% 98%;
-  --destructive: 0 84.2% 60.2%;
-  --destructive-foreground: 60 9.1% 97.8%;
-  --ring: 132 65% 45%;
+  --background: 220 17% 17%;
+  --foreground: 60 30% 96%;
+  --muted: 220 13% 28%;
+  --muted-foreground: 220 10% 70%;
+  --popover: 220 17% 15%;
+  --popover-foreground: 60 30% 96%;
+  --card: 220 17% 20%;
+  --card-foreground: 60 30% 96%;
+  --border: 220 16% 30%;
+  --input: 220 16% 30%;
+  --primary: 160 100% 45%;
+  --primary-foreground: 220 17% 17%;
+  --secondary: 260 100% 60%;
+  --secondary-foreground: 220 17% 17%;
+  --accent: 35 100% 70%;
+  --accent-foreground: 220 17% 17%;
+  --destructive: 0 80% 63%;
+  --destructive-foreground: 60 30% 96%;
+  --ring: 160 100% 45%;
   --radius: 0.5rem;
 
-  --sidebar-background: 0 0% 100%;
-  --sidebar-foreground: 20 14.3% 4.1%;
-  --sidebar-primary: 132 65% 45%;
-  --sidebar-primary-foreground: 211 100% 99%;
-  --sidebar-accent: 210 100% 50%;
-  --sidebar-accent-foreground: 210 40% 98%;
-  --sidebar-border: 20 5.9% 90%;
-  --sidebar-ring: 132 65% 45%;
+  --sidebar-background: 220 17% 15%;
+  --sidebar-foreground: 60 30% 96%;
+  --sidebar-primary: 160 100% 45%;
+  --sidebar-primary-foreground: 220 17% 17%;
+  --sidebar-accent: 35 100% 70%;
+  --sidebar-accent-foreground: 220 17% 17%;
+  --sidebar-border: 220 16% 30%;
+  --sidebar-ring: 160 100% 45%;
 
-  --chart-1: 132 65% 45%;
-  --chart-2: 210 100% 50%;
-  --chart-3: 43 96% 56%;
-  --chart-4: 271 91% 65%;
-  --chart-5: 0 84% 60%;
+  --chart-1: 160 100% 45%;
+  --chart-2: 260 100% 60%;
+  --chart-3: 35 100% 70%;
+  --chart-4: 325 80% 70%;
+  --chart-5: 0 80% 63%;
 }
 
 .dark {

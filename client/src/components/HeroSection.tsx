@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { Terminal } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="hero-gradient text-white py-20">
+    <section className="bg-background border-b border-muted py-20">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center">
           <motion.div 
@@ -12,28 +13,32 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-4xl md:text-5xl font-ubuntu font-bold mb-4">
-              Learn Linux Interactively
+            <div className="flex items-center mb-4">
+              <Terminal size={36} className="text-primary mr-3" />
+              <span className="text-accent font-mono text-lg">mission_os</span>
+            </div>
+            <h1 className="text-4xl md:text-5xl font-ubuntu font-bold mb-4 text-foreground">
+              Solve Cases.<br/>Master Linux.
             </h1>
-            <p className="text-xl mb-8">
-              Termix is a custom Linux distribution designed specifically for learning. 
-              Explore, experiment, and master Linux in a safe environment.
+            <p className="text-xl mb-8 text-muted-foreground">
+              Termix is an immersive, story-driven Linux learning experience. 
+              Become a digital detective and solve cases using command line skills.
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
               <Button 
-                className="bg-white text-primary hover:bg-gray-100 font-bold text-base"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 font-bold text-base"
                 size="lg"
                 asChild
               >
-                <a href="#download">Get Started</a>
+                <a href="#download">Join the Investigation</a>
               </Button>
               <Button 
                 variant="outline" 
-                className="border-2 border-white text-white hover:bg-white hover:text-primary font-bold text-base"
+                className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground font-bold text-base"
                 size="lg"
                 asChild
               >
-                <a href="#features">Learn More</a>
+                <a href="#features">View Mission Details</a>
               </Button>
             </div>
           </motion.div>
@@ -43,11 +48,22 @@ const HeroSection = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <img 
-              src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-              alt="Termix OS on a laptop" 
-              className="rounded-lg shadow-xl w-full" 
-            />
+            <div className="bg-card rounded-lg shadow-xl p-4 border border-muted">
+              <div className="bg-background rounded-t-md p-2 flex items-center">
+                <div className="flex space-x-2 mr-4">
+                  <div className="w-3 h-3 rounded-full bg-destructive"></div>
+                  <div className="w-3 h-3 rounded-full bg-accent"></div>
+                  <div className="w-3 h-3 rounded-full bg-primary"></div>
+                </div>
+                <span className="text-muted-foreground font-mono text-sm">termix@cybersec:~</span>
+              </div>
+              <div className="p-4 font-mono text-sm">
+                <p className="text-primary mb-2">[SYSTEM] <span className="text-foreground">Mission initialization...</span></p>
+                <p className="text-foreground mb-2">Good day, officer. It seems you've forgotten your details.</p>
+                <p className="text-foreground mb-2">Please identify yourself:</p>
+                <p className="flex"><span className="text-secondary mr-2">$</span> <span className="text-accent">name</span><span className="text-primary animate-pulse">_</span></p>
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>

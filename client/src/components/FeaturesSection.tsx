@@ -2,42 +2,44 @@ import {
   Terminal, 
   ShieldCheck, 
   Trophy, 
-  GitFork, 
-  BookOpen, 
-  Users 
+  Folder, 
+  FileLock, 
+  Users,
+  Search,
+  UserPlus 
 } from "lucide-react";
 import { motion } from "framer-motion";
 
 const features = [
   {
     icon: <Terminal size={40} />,
-    title: "Interactive Terminal Lessons",
-    description: "Step-by-step guided terminal lessons with real-time feedback and hints to help you master command line skills."
+    title: "Chapter 1: Basic Investigation",
+    description: "Learn navigation, file permissions, and text editing as you explore crime scene evidence. Use cd, ls, chmod, vim and other basic commands."
+  },
+  {
+    icon: <Search size={40} />,
+    title: "Chapter 2: Digital Forensics",
+    description: "Master file analysis with grep, find, and date commands to uncover clues. Identify when files were modified and search for hidden evidence."
+  },
+  {
+    icon: <UserPlus size={40} />,
+    title: "Chapter 3: Identity & Access",
+    description: "Learn user management with useradd, usermod, and passwd to establish aliases and infiltrate suspect systems with proper credentials."
+  },
+  {
+    icon: <FileLock size={40} />,
+    title: "Chapter 4: Secure Communications",
+    description: "Access remote systems with SSH, SCP, and secure tunnels to retrieve evidence while maintaining operational security."
+  },
+  {
+    icon: <Folder size={40} />,
+    title: "Chapter 5: Evidence Collection",
+    description: "Learn archiving, compression, and data management to properly collect and preserve digital evidence for your case."
   },
   {
     icon: <ShieldCheck size={40} />,
-    title: "Safe Learning Environment",
-    description: "Practice system administration and advanced commands in a safe, isolated environment without risking your main system."
-  },
-  {
-    icon: <Trophy size={40} />,
-    title: "Achievement System",
-    description: "Earn badges and track your progress as you complete challenges and master new Linux skills and concepts."
-  },
-  {
-    icon: <GitFork size={40} />,
-    title: "Real-world Projects",
-    description: "Apply your skills with practical projects that simulate real-world scenarios and system administration tasks."
-  },
-  {
-    icon: <BookOpen size={40} />,
-    title: "Comprehensive Documentation",
-    description: "Access detailed documentation and references right from the desktop to support your learning journey."
-  },
-  {
-    icon: <Users size={40} />,
-    title: "Community Support",
-    description: "Connect with other learners and experienced Linux users for help, collaboration, and knowledge sharing."
+    title: "Chapter 6: Final Mission",
+    description: "Apply all learned skills in a complex case that requires combining commands and techniques from previous chapters to solve the mystery."
   }
 ];
 
@@ -58,26 +60,26 @@ const item = {
 
 const FeaturesSection = () => {
   return (
-    <section id="features" className="py-16 bg-white">
+    <section id="features" className="py-16 bg-card border-y border-muted">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <motion.h2 
-            className="text-3xl font-ubuntu font-bold mb-4"
+            className="text-3xl font-ubuntu font-bold mb-4 text-foreground"
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            Key Features
+            Mission Chapters
           </motion.h2>
           <motion.p 
-            className="text-lg text-gray-600 max-w-3xl mx-auto"
+            className="text-lg text-muted-foreground max-w-3xl mx-auto"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Discover how Termix makes learning Linux intuitive and engaging with these powerful features.
+            Each chapter introduces new Linux skills through an engaging detective storyline that builds your command-line expertise.
           </motion.p>
         </div>
         
@@ -91,14 +93,17 @@ const FeaturesSection = () => {
           {features.map((feature, index) => (
             <motion.div 
               key={index}
-              className="feature-card bg-background rounded-lg p-6 shadow-md"
+              className="feature-card bg-background rounded-lg p-6 shadow-md border border-muted"
               variants={item}
             >
               <div className="text-primary mb-4">
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-ubuntu font-bold mb-3">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <h3 className="text-xl font-ubuntu font-bold mb-3 text-foreground">{feature.title}</h3>
+              <p className="text-muted-foreground">{feature.description}</p>
+              <div className="mt-4 text-xs font-mono text-primary pt-3 border-t border-muted">
+                <code>MISSION_STATUS: AWAITING_OFFICER</code>
+              </div>
             </motion.div>
           ))}
         </motion.div>
