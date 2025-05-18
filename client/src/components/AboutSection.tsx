@@ -15,16 +15,16 @@ const AboutSection = () => {
           >
             <h2 className="text-3xl font-ubuntu font-bold mb-4 text-foreground">About Ternix</h2>
             <p className="text-lg mb-6 text-muted-foreground">
-              Ternix is an immersive, story-driven Linux learning platform disguised as a detective game.
-              Solve digital crimes while mastering essential command line skills.
+              Ternix is an immersive, story-driven Linux learning platform that puts you in the role of a digital detective.
+              Log in to suspect terminals, solve crimes, and learn Linux commands as part of your investigative toolkit.
             </p>
             <p className="text-lg mb-6 text-muted-foreground">
               Our mission is to transform Linux learning from intimidating technical exercises into 
-              engaging missions that feel like solving a cybersecurity case.
+              engaging criminal investigations that guide you through command usage in a natural, contextual way.
             </p>
             <p className="text-lg mb-6 text-muted-foreground">
-              Each challenge introduces new commands naturally within the storyline, building your 
-              skills progressively as you solve complex digital mysteries.
+              Upon installation, you'll be assigned to the Cyber Investigation Agency, given cases to solve, 
+              and guided through Linux commands as tools to uncover evidence, analyze data, and catch perpetrators.
             </p>
             <div className="flex space-x-4 mt-8">
               <a href="#" className="text-accent hover:text-primary transition-colors duration-300" aria-label="GitHub">
@@ -74,15 +74,20 @@ const AboutSection = () => {
                 </div>
                 
                 <div className="font-mono text-xs bg-background p-3 rounded border border-muted">
-                  <p className="text-primary mb-1"># Sample investigation command sequence</p>
-                  <p className="text-secondary mb-1">$ ls -la /evidence/crime_scene</p>
-                  <p className="text-muted-foreground mb-1">total 24</p>
-                  <p className="text-muted-foreground mb-1">drwxr-xr-x 2 detective cybersec 4096 May 12 14:23 .</p>
-                  <p className="text-muted-foreground mb-1">drwxr-xr-x 5 detective cybersec 4096 May 12 14:20 ..</p>
-                  <p className="text-muted-foreground mb-1">-rw-r--r-- 1 root root 3284 May 12 14:21 access_logs.txt</p>
-                  <p className="text-muted-foreground mb-1">-rw-r----- 1 root cybersec 2048 May 12 13:45 suspect_data.enc</p>
-                  <p className="text-secondary mb-1">$ sudo cat /evidence/crime_scene/access_logs.txt</p>
-                  <p className="text-accent">CLUE FOUND: Unauthorized access at 13:42...</p>
+                  <p className="text-primary mb-1">[TERMINAL SESSION - CASE #1: THE VANISHING FILES]</p>
+                  <p className="text-muted-foreground mb-1">{'>'} Good morning, Officer. We need your help with a data theft case.</p>
+                  <p className="text-muted-foreground mb-1">{'>'} Suspect claims files were deleted by someone else. Let's investigate.</p>
+                  <p className="text-secondary mb-1">$ cd /suspect/laptop</p>
+                  <p className="text-secondary mb-1">$ ls -la</p>
+                  <p className="text-muted-foreground mb-1">total 28</p>
+                  <p className="text-muted-foreground mb-1">drwxr-xr-x 3 suspect users 4096 May 15 09:23 .</p>
+                  <p className="text-muted-foreground mb-1">drwxr-xr-x 5 root    root  4096 May 15 09:20 ..</p>
+                  <p className="text-muted-foreground mb-1">-rw-r--r-- 1 suspect users 3284 May 15 09:21 browser_history.txt</p>
+                  <p className="text-muted-foreground mb-1">drwx------ 2 suspect users 4096 May 15 08:42 .hidden_dir</p>
+                  <p className="text-secondary mb-1">$ cd .hidden_dir</p>
+                  <p className="text-accent mb-1">{'>'} SYSTEM: Permission denied. Try using chmod or sudo.</p>
+                  <p className="text-secondary mb-1">$ sudo chmod +rx .hidden_dir</p>
+                  <p className="text-accent">{'>'} CLUE FOUND: Accessing hidden directory revealed deleted evidence...</p>
                 </div>
               </div>
             </div>
