@@ -105,9 +105,9 @@ export default function DemoSection() {
       } else if (command === "investigate") {
         // Handle the investigate command manually
         const newHistory = [...terminalHistory];
-        investigateResponses.forEach(line => {
+        for (const line of investigateResponses) {
           newHistory.push(line);
-        });
+        }
         setTerminalHistory(newHistory);
       } else if (command === "ls") {
         setTerminalHistory(prev => [...prev, filesListing]);
@@ -264,6 +264,4 @@ export default function DemoSection() {
       </div>
     </section>
   );
-};
-
-export default DemoSection;
+}
