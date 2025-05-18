@@ -70,7 +70,7 @@ const ContactSection = () => {
                     href="#" 
                     className="text-accent hover:text-primary transition-colors duration-300 text-sm"
                   >
-                    github.com/termix-project
+                    github.com/ternix-project
                   </a>
                 </div>
               </div>
@@ -105,7 +105,7 @@ const ContactSection = () => {
             </div>
             <h3 className="text-xl font-ubuntu font-bold mb-4 text-foreground">Join Our Network</h3>
             <p className="mb-6 text-muted-foreground">
-              Termix is an open-source operation. We welcome contributions from programmers, 
+              Ternix is an open-source operation. We welcome contributions from programmers, 
               story writers, and cybersecurity enthusiasts.
             </p>
             

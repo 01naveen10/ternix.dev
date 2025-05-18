@@ -36,7 +36,7 @@ const DownloadSection = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          Termix is currently assembling its detective agency. Join our secure network to receive mission briefings and be among the first to access the program.
+          Ternix is currently assembling its detective agency. Join our secure network to receive mission briefings and be among the first to access the program.
         </motion.p>
         
         <motion.div 

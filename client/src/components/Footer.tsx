@@ -147,7 +147,7 @@ const Footer = () => {
         </div>
         
         <div className="pt-8 border-t border-muted text-center text-muted-foreground font-mono text-xs">
-          <p>SYSTEM:// &copy; {new Date().getFullYear()} Termix Project <span className="text-primary">|</span> ACCESS_LEVEL: PUBLIC</p>
+          <p>SYSTEM:// &copy; {new Date().getFullYear()} Ternix Project <span className="text-primary">|</span> ACCESS_LEVEL: PUBLIC</p>
         </div>
       </div>
     </footer>
