@@ -113,8 +113,9 @@ const FeaturesSection = () => {
               </div>
               <h3 className="text-xl font-ubuntu font-bold mb-3 text-foreground">{feature.title}</h3>
               <p className="text-muted-foreground">{feature.description}</p>
-              <div className="mt-4 text-xs font-mono text-primary pt-3 border-t border-muted">
-                <code>MISSION_STATUS: AWAITING_OFFICER</code>
+              <div className="mt-4 text-xs font-mono pt-3 border-t border-muted flex justify-between items-center">
+                <code className="text-primary">STATUS: {feature.status}</code>
+                <a href={feature.link} className="text-accent hover:text-primary transition-colors">CASE_DETAILS →</a>
               </div>
             </motion.div>
           ))}
