@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-opensans text-foreground bg-background;
+  }
+}
+
+:root {
+  --background: 0 0% 98%;
+  --foreground: 20 14.3% 4.1%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 20 14.3% 4.1%;
+  --card: 0 0% 100%;
+  --card-foreground: 20 14.3% 4.1%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  --primary: 132 65% 45%;
+  --primary-foreground: 211 100% 99%;
+  --secondary: 220 13% 20%;
+  --secondary-foreground: 60 9.1% 97.8%;
+  --accent: 210 100% 50%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --ring: 132 65% 45%;
+  --radius: 0.5rem;
+
+  --sidebar-background: 0 0% 100%;
+  --sidebar-foreground: 20 14.3% 4.1%;
+  --sidebar-primary: 132 65% 45%;
+  --sidebar-primary-foreground: 211 100% 99%;
+  --sidebar-accent: 210 100% 50%;
+  --sidebar-accent-foreground: 210 40% 98%;
+  --sidebar-border: 20 5.9% 90%;
+  --sidebar-ring: 132 65% 45%;
+
+  --chart-1: 132 65% 45%;
+  --chart-2: 210 100% 50%;
+  --chart-3: 43 96% 56%;
+  --chart-4: 271 91% 65%;
+  --chart-5: 0 84% 60%;
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 132 65% 45%;
+  --primary-foreground: 211 100% 99%;
+  --secondary: 220 13% 20%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 210 100% 50%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 4.9% 83.9%;
+  --radius: 0.5rem;
+
+  --sidebar-background: 240 10% 3.9%;
+  --sidebar-foreground: 0 0% 98%;
+  --sidebar-primary: 132 65% 45%;
+  --sidebar-primary-foreground: 211 100% 99%;
+  --sidebar-accent: 210 100% 50%;
+  --sidebar-accent-foreground: 210 40% 98%;
+  --sidebar-border: 240 3.7% 15.9%;
+  --sidebar-ring: 132 65% 45%;
+}
+
+/* Custom font families */
+@layer utilities {
+  .font-ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  .font-opensans {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .font-mono {
+    font-family: 'Source Code Pro', monospace;
+  }
+}
+
+/* Custom animations and transitions */
+@layer components {
+  .hero-gradient {
+    @apply bg-gradient-to-r from-primary to-primary/70;
+  }
+  
+  .feature-card {
+    @apply transition-all duration-300;
+  }
+  
+  .feature-card:hover {
+    @apply -translate-y-1 shadow-lg;
+  }
+  
+  .nav-link {
+    @apply relative;
+  }
+  
+  .nav-link:after {
+    content: '';
+    @apply block absolute w-0 h-0.5 bg-primary transition-all duration-300 left-0 -bottom-1;
+  }
+  
+  .nav-link:hover:after {
+    @apply w-full;
+  }
+}
