@@ -67,10 +67,10 @@ const ContactSection = () => {
                 <div>
                   <div className="text-xs text-muted-foreground font-mono mb-1">CODE REPOSITORY</div>
                   <a 
-                    href="#" 
+                    href="https://github.com/01naveen10/ternix.dev" 
                     className="text-accent hover:text-primary transition-colors duration-300 text-sm"
                   >
-                    github.com/ternix-project
+                    github.com/01naveen10/ternix.dev
                   </a>
                 </div>
               </div>

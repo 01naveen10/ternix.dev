@@ -57,9 +57,21 @@ const Header = () => {
           <Button 
             size="sm" 
             className="bg-secondary text-secondary-foreground hover:bg-secondary/90 flex items-center"
+            asChild
           >
-            <Shield size={16} className="mr-1" />
-            <span>Join Agency</span>
+            <a href="https://ternix.dev">
+              <Shield size={16} className="mr-1" />
+              <span>Join Agency</span>
+            </a>
+          </Button>
+          <Button 
+            size="sm" 
+            className="bg-primary text-primary-foreground hover:bg-primary/90 flex items-center ml-3"
+            asChild
+          >
+            <a href="https://ternix.dev/download">
+              <span>Download Ternix</span>
+            </a>
           </Button>
         </nav>
         
@@ -122,9 +134,22 @@ const Header = () => {
             <Button 
               className="mt-2 bg-secondary text-secondary-foreground hover:bg-secondary/90 flex items-center justify-center"
               onClick={() => setIsMenuOpen(false)}
+              asChild
             >
-              <Shield size={16} className="mr-1" />
-              <span>Join the Agency</span>
+              <a href="https://ternix.dev">
+                <Shield size={16} className="mr-1" />
+                <span>Join the Agency</span>
+              </a>
+            </Button>
+            
+            <Button 
+              className="mt-2 bg-primary text-primary-foreground hover:bg-primary/90 flex items-center justify-center"
+              onClick={() => setIsMenuOpen(false)}
+              asChild
+            >
+              <a href="https://ternix.dev/download">
+                <span>Download Ternix</span>
+              </a>
             </Button>
           </nav>
         </div>

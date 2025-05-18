@@ -13,33 +13,45 @@ import { motion } from "framer-motion";
 const features = [
   {
     icon: <Terminal size={40} />,
-    title: "Chapter 1: Basic Investigation",
-    description: "Learn navigation, file permissions, and text editing as you explore crime scene evidence. Use cd, ls, chmod, vim and other basic commands."
+    title: "Chapter 1: The Vanishing Files",
+    description: "Solve the case of mysteriously disappearing data by mastering navigation (cd, ls), file permissions (chmod), and text editing (vim) to recover critical evidence.",
+    status: "AVAILABLE AT LAUNCH",
+    link: "https://ternix.dev/cases/vanishing-files"
   },
   {
     icon: <Search size={40} />,
-    title: "Chapter 2: Digital Forensics",
-    description: "Master file analysis with grep, find, and date commands to uncover clues. Identify when files were modified and search for hidden evidence."
+    title: "Chapter 2: The Encrypted Message",
+    description: "Decrypt a hidden communication by using grep, find, and date commands to analyze files, identify modification patterns, and extract concealed information.",
+    status: "AVAILABLE AT LAUNCH",
+    link: "https://ternix.dev/cases/encrypted-message"
   },
   {
     icon: <UserPlus size={40} />,
-    title: "Chapter 3: Identity & Access",
-    description: "Learn user management with useradd, usermod, and passwd to establish aliases and infiltrate suspect systems with proper credentials."
+    title: "Chapter 3: The Insider Threat",
+    description: "Identify a corporate spy by learning user management (useradd, usermod, passwd) to investigate suspicious accounts and access restricted systems.",
+    status: "COMING SOON",
+    link: "https://ternix.dev/cases/insider-threat"
   },
   {
     icon: <FileLock size={40} />,
-    title: "Chapter 4: Secure Communications",
-    description: "Access remote systems with SSH, SCP, and secure tunnels to retrieve evidence while maintaining operational security."
+    title: "Chapter 4: The Remote Breach",
+    description: "Trace a network intrusion using SSH, SCP, and secure tunneling techniques to access compromised servers and collect network evidence.",
+    status: "IN DEVELOPMENT",
+    link: "https://ternix.dev/cases/remote-breach"
   },
   {
     icon: <Folder size={40} />,
-    title: "Chapter 5: Evidence Collection",
-    description: "Learn archiving, compression, and data management to properly collect and preserve digital evidence for your case."
+    title: "Chapter 5: The Data Heist",
+    description: "Recover stolen intellectual property by mastering archiving (tar, zip), compression, and data management techniques to reconstruct fragmented evidence.",
+    status: "IN DEVELOPMENT",
+    link: "https://ternix.dev/cases/data-heist"
   },
   {
     icon: <ShieldCheck size={40} />,
-    title: "Chapter 6: Final Mission",
-    description: "Apply all learned skills in a complex case that requires combining commands and techniques from previous chapters to solve the mystery."
+    title: "Chapter 6: The Cyber Syndicate",
+    description: "Take down a hacking organization by combining all your Linux skills in a complex investigation that spans multiple systems and requires advanced techniques.",
+    status: "PLANNED",
+    link: "https://ternix.dev/cases/cyber-syndicate"
   }
 ];
 
