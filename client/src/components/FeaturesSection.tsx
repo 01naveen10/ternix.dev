@@ -13,43 +13,43 @@ import { motion } from "framer-motion";
 const features = [
   {
     icon: <Terminal size={40} />,
-    title: "Chapter 1: The Vanishing Files",
-    description: "Solve the case of mysteriously disappearing data by mastering navigation (cd, ls), file permissions (chmod), and text editing (vim) to recover critical evidence.",
+    title: "Case #1: The Vanishing Files",
+    description: "Critical evidence has mysteriously disappeared from a suspect's laptop. As a digital detective, you'll navigate hidden directories, reveal concealed files, and recover deleted evidence to track down the culprit.",
     status: "AVAILABLE AT LAUNCH",
     link: "https://ternix.dev/cases/vanishing-files"
   },
   {
     icon: <Search size={40} />,
-    title: "Chapter 2: The Encrypted Message",
-    description: "Decrypt a hidden communication by using grep, find, and date commands to analyze files, identify modification patterns, and extract concealed information.",
+    title: "Case #2: The Encrypted Message",
+    description: "A suspicious encoded message has been intercepted. Search through intercepted communications, analyze file patterns, and crack the encryption to reveal a plot that threatens national security.",
     status: "AVAILABLE AT LAUNCH",
     link: "https://ternix.dev/cases/encrypted-message"
   },
   {
     icon: <UserPlus size={40} />,
-    title: "Chapter 3: The Insider Threat",
-    description: "Identify a corporate spy by learning user management (useradd, usermod, passwd) to investigate suspicious accounts and access restricted systems.",
+    title: "Case #3: The Insider Threat",
+    description: "Someone in the organization is leaking classified information. Create undercover identities, manage access permissions, and infiltrate secured systems to unmask the corporate spy before more damage is done.",
     status: "COMING SOON",
     link: "https://ternix.dev/cases/insider-threat"
   },
   {
     icon: <FileLock size={40} />,
-    title: "Chapter 4: The Remote Breach",
-    description: "Trace a network intrusion using SSH, SCP, and secure tunneling techniques to access compromised servers and collect network evidence.",
+    title: "Case #4: The Remote Breach",
+    description: "A high-security server has been compromised. Establish secure connections to breach sites, transfer evidence securely, and follow the digital breadcrumbs to identify the sophisticated attack vector.",
     status: "IN DEVELOPMENT",
     link: "https://ternix.dev/cases/remote-breach"
   },
   {
     icon: <Folder size={40} />,
-    title: "Chapter 5: The Data Heist",
-    description: "Recover stolen intellectual property by mastering archiving (tar, zip), compression, and data management techniques to reconstruct fragmented evidence.",
+    title: "Case #5: The Data Heist",
+    description: "Valuable intellectual property has been stolen and scattered across multiple systems. Recover fragmented archives, extract compressed evidence, and reconstruct the timeline of this elaborate digital heist.",
     status: "IN DEVELOPMENT",
     link: "https://ternix.dev/cases/data-heist"
   },
   {
     icon: <ShieldCheck size={40} />,
-    title: "Chapter 6: The Cyber Syndicate",
-    description: "Take down a hacking organization by combining all your Linux skills in a complex investigation that spans multiple systems and requires advanced techniques.",
+    title: "Case #6: The Cyber Syndicate",
+    description: "A notorious hacking group has left digital fingerprints across the dark web. Deploy your full arsenal of investigative techniques to infiltrate their network, expose their operations, and bring down the entire organization.",
     status: "PLANNED",
     link: "https://ternix.dev/cases/cyber-syndicate"
   }
