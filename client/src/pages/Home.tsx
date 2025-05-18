@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import AboutSection from "@/components/AboutSection";
+import DemoSection from "@/components/DemoSection";
 import ScreenshotsSection from "@/components/ScreenshotsSection";
 import DownloadSection from "@/components/DownloadSection";
 import CTASection from "@/components/CTASection";
@@ -43,6 +44,7 @@ export default function Home() {
         <HeroSection />
         <FeaturesSection />
         <AboutSection />
+        <DemoSection />
         <ScreenshotsSection />
         <DownloadSection />
         <CTASection />
