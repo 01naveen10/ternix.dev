@@ -21,7 +21,7 @@ const HeroSection = () => {
               Solve Cases.<br/>Master Linux.
             </h1>
             <p className="text-xl mb-8 text-muted-foreground">
-              Termix is an immersive, story-driven Linux learning experience. 
+              Ternix is an immersive, story-driven Linux learning experience. 
               Become a digital detective and solve cases using command line skills.
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
@@ -55,7 +55,7 @@ const HeroSection = () => {
                   <div className="w-3 h-3 rounded-full bg-accent"></div>
                   <div className="w-3 h-3 rounded-full bg-primary"></div>
                 </div>
-                <span className="text-muted-foreground font-mono text-sm">termix@cybersec:~</span>
+                <span className="text-muted-foreground font-mono text-sm">ternix@cybersec:~</span>
               </div>
               <div className="p-4 font-mono text-sm">
                 <p className="text-primary mb-2">[SYSTEM] <span className="text-foreground">Mission initialization...</span></p>

@@ -38,7 +38,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center mb-4">
               <Terminal size={24} className="text-primary mr-2" />
-              <span className="text-primary text-2xl font-ubuntu font-bold">Termix</span>
+              <span className="text-primary text-2xl font-ubuntu font-bold">Ternix</span>
               <span className="text-accent text-lg ml-1">.dev</span>
             </div>
             <p className="text-muted-foreground mb-4">

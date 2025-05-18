@@ -32,7 +32,7 @@ const Header = () => {
         <div className="flex items-center">
           <a href="#" className="flex items-center">
             <Terminal size={24} className="text-primary mr-2" />
-            <span className="text-primary text-2xl font-ubuntu font-bold">Termix</span>
+            <span className="text-primary text-2xl font-ubuntu font-bold">Ternix</span>
             <span className="text-accent text-lg ml-1">.dev</span>
           </a>
         </div>

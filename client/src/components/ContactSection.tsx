@@ -23,7 +23,7 @@ const ContactSection = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Connect with mission control or join our operative network to support Termix development.
+            Connect with mission control or join our operative network to support Ternix development.
           </motion.p>
         </div>
         

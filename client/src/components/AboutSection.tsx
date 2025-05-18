@@ -13,9 +13,9 @@ const AboutSection = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl font-ubuntu font-bold mb-4 text-foreground">About Termix</h2>
+            <h2 className="text-3xl font-ubuntu font-bold mb-4 text-foreground">About Ternix</h2>
             <p className="text-lg mb-6 text-muted-foreground">
-              Termix is an immersive, story-driven Linux learning platform disguised as a detective game.
+              Ternix is an immersive, story-driven Linux learning platform disguised as a detective game.
               Solve digital crimes while mastering essential command line skills.
             </p>
             <p className="text-lg mb-6 text-muted-foreground">
