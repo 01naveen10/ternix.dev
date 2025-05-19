@@ -21,7 +21,7 @@ const ScreenshotsSection = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Get a glimpse of the Termix interface and the immersive learning experience that awaits.
+            Get a glimpse of the Ternix interface and the immersive learning experience that awaits.
           </motion.p>
         </div>
         

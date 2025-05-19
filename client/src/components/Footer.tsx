@@ -84,7 +84,7 @@ const Footer = () => {
               <li>
                 <a href="#about" className="text-muted-foreground hover:text-primary transition-colors duration-300 flex items-center">
                   <span className="text-xs text-primary font-mono mr-2">&gt;</span>
-                  <span>About Termix</span>
+                  <span>About Ternix</span>
                 </a>
               </li>
               <li>

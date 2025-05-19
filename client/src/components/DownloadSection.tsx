@@ -108,7 +108,7 @@ const DownloadSection = () => {
           
           <div className="mt-6 pt-6 border-t border-muted">
             <p className="text-muted-foreground text-sm">
-              <span className="text-primary font-mono">[ADMIN]:</span> Termix launches soon. Your skills are needed.
+              <span className="text-primary font-mono">[ADMIN]:</span> Ternix launches soon. Your skills are needed.
             </p>
           </div>
         </motion.div>

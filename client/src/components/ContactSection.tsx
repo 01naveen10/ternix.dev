@@ -52,10 +52,10 @@ const ContactSection = () => {
                 <div>
                   <div className="text-xs text-muted-foreground font-mono mb-1">SECURE EMAIL</div>
                   <a 
-                    href="mailto:termix.os.project@gmail.com" 
+                    href="mailto:Ternix.os.project@gmail.com" 
                     className="text-accent hover:text-primary transition-colors duration-300 text-sm"
                   >
-                    termix.os.project@gmail.com
+                    Ternix.os.project@gmail.com
                   </a>
                 </div>
               </div>

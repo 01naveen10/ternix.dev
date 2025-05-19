@@ -33,7 +33,7 @@ const Header = () => {
           <a href="#" className="flex items-center">
             <Terminal size={24} className="text-primary mr-2" />
             <span className="text-primary text-2xl font-ubuntu font-bold">Ternix</span>
-            <span className="text-accent text-lg ml-1">.dev</span>
+          
           </a>
         </div>
         
@@ -105,7 +105,7 @@ const Header = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               <span className="text-xs text-primary font-mono mr-2">&gt;</span>
-              <span>About Termix</span>
+              <span>About Ternix</span>
             </a>
             <a 
               href="#screenshots" 

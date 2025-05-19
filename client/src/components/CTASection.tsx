@@ -22,7 +22,7 @@ const CTASection = () => {
               <h2 className="text-3xl font-ubuntu font-bold mb-4 text-foreground">Ready to Join the Investigation?</h2>
               <p className="text-lg text-muted-foreground mb-6">
                 Whether you're a command line rookie or a seasoned operative, 
-                Termix provides the perfect training environment to master Linux skills through engaging detective missions.
+                Ternix provides the perfect training environment to master Linux skills through engaging detective missions.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button
